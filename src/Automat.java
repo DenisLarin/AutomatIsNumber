@@ -33,7 +33,6 @@ public class Automat {
         }
     }
     public boolean isStringNumber(String string){
-        //325
         //проверяем сколько веток от узла
             //если ветка одна проверяем возможность перехода
             //если веток несколько проверяем возможность перехода на каждую из веток пока не найдем подходящую, если подхлдящая не найдена возвращаем false,
@@ -77,7 +76,6 @@ public class Automat {
                     break;
             }
         }
-
         return false;
     }
 
@@ -91,10 +89,6 @@ public class Automat {
                 return true;
         }
         return false;
-    }
-
-    private int checkNumberList(int index) {
-        return steps.get(index).size();
     }
 
     public void printList(){
